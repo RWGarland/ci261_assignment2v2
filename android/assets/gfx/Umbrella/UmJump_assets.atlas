@@ -1,0 +1,125 @@
+
+UmJump_assets.png
+size: 1024,512
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+UmJump
+  rotate: false
+  xy: 2, 347
+  size: 113, 113
+  orig: 113, 113
+  offset: 0, 0
+  index: 1
+UmJump
+  rotate: false
+  xy: 2, 232
+  size: 113, 113
+  orig: 113, 113
+  offset: 0, 0
+  index: 3
+UmJump
+  rotate: false
+  xy: 117, 347
+  size: 113, 113
+  orig: 113, 113
+  offset: 0, 0
+  index: 9
+UmJump
+  rotate: false
+  xy: 2, 117
+  size: 113, 113
+  orig: 113, 113
+  offset: 0, 0
+  index: 11
+UmJump
+  rotate: false
+  xy: 117, 232
+  size: 113, 113
+  orig: 113, 113
+  offset: 0, 0
+  index: 17
+UmJump
+  rotate: false
+  xy: 232, 347
+  size: 112, 113
+  orig: 112, 113
+  offset: 0, 0
+  index: 2
+UmJump
+  rotate: false
+  xy: 2, 2
+  size: 112, 113
+  orig: 112, 113
+  offset: 0, 0
+  index: 4
+UmJump
+  rotate: false
+  xy: 117, 118
+  size: 113, 112
+  orig: 113, 112
+  offset: 0, 0
+  index: 5
+UmJump
+  rotate: false
+  xy: 346, 348
+  size: 113, 112
+  orig: 113, 112
+  offset: 0, 0
+  index: 7
+UmJump
+  rotate: false
+  xy: 232, 232
+  size: 112, 113
+  orig: 112, 113
+  offset: 0, 0
+  index: 10
+UmJump
+  rotate: false
+  xy: 346, 233
+  size: 112, 113
+  orig: 112, 113
+  offset: 0, 0
+  index: 12
+UmJump
+  rotate: false
+  xy: 461, 348
+  size: 113, 112
+  orig: 113, 112
+  offset: 0, 0
+  index: 13
+UmJump
+  rotate: false
+  xy: 460, 234
+  size: 113, 112
+  orig: 113, 112
+  offset: 0, 0
+  index: 15
+UmJump
+  rotate: false
+  xy: 232, 118
+  size: 112, 112
+  orig: 112, 112
+  offset: 0, 0
+  index: 6
+UmJump
+  rotate: false
+  xy: 346, 119
+  size: 112, 112
+  orig: 112, 112
+  offset: 0, 0
+  index: 8
+UmJump
+  rotate: false
+  xy: 576, 348
+  size: 112, 112
+  orig: 112, 112
+  offset: 0, 0
+  index: 14
+UmJump
+  rotate: false
+  xy: 460, 120
+  size: 112, 112
+  orig: 112, 112
+  offset: 0, 0
+  index: 16

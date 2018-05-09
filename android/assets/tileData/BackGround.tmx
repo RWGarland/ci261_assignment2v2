@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="182" height="33" tilewidth="32" tileheight="32" nextobjectid="24">
+ <tileset firstgid="1" name="Background" tilewidth="32" tileheight="32" tilecount="1860" columns="60">
+  <image source="Tiles/BackGround.png" width="1920" height="997"/>
+ </tileset>
+ <layer name="BackGround" width="182" height="33">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <layer name="physics" width="182" height="33">
+  <data encoding="base64" compression="zlib">
+   eJzt19EJwCAMBUCh+3X/cTpBpdhKw8sd+O9TickYAAAAAAAAmc7jfpHDPQO806mOzrIm5gWAZF//6dV7hB37q5551c5ciec10y0vAEA1ejGoI3WGpj7vDuAZ9RIAAIC/mEkBAAD6ugCc6yGL
+  </data>
+ </layer>
+ <objectgroup name="collisions">
+  <object id="1" name="platfom_0" x="288" y="896" width="191" height="33"/>
+  <object id="2" name="platfom_1" x="577" y="672" width="192" height="33"/>
+  <object id="3" name="platfom_3" x="896" y="480" width="225" height="33"/>
+  <object id="4" name="platfom_4" x="1312" y="640" width="224" height="31"/>
+  <object id="5" name="platfom_5" x="1632" y="479" width="192" height="32"/>
+  <object id="6" name="platfom_6" x="1921" y="352" width="222" height="33"/>
+  <object id="7" name="platfom_7" x="2401" y="448" width="222" height="34"/>
+  <object id="8" name="platfom_8" x="2752" y="289" width="225" height="32"/>
+  <object id="9" name="platfom_9" x="3039" y="448" width="225" height="31"/>
+  <object id="10" name="platfom_10" x="3553" y="480" width="190" height="33"/>
+  <object id="11" name="platfom_11" x="3808" y="353" width="256" height="32"/>
+  <object id="12" name="platfom_12" x="4319" y="447" width="225" height="34"/>
+  <object id="13" name="platfom_13" x="4671" y="257" width="225" height="31"/>
+  <object id="14" name="platfom_14" x="4992" y="448" width="224" height="32"/>
+  <object id="15" name="platfom_15" x="5376" y="703" width="193" height="34"/>
+  <object id="16" name="platfom_16" x="5664" y="576" width="131" height="31"/>
+  <object id="17" name="Boarder_0" x="-17.3333" y="0" width="48" height="1054.67"/>
+  <object id="19" name="Boarder_1" x="2" y="1020" width="5822" height="44"/>
+  <object id="20" name="Boarder_2" x="5792" y="-2" width="28" height="1054"/>
+  <object id="21" name="Boarder_3" x="0" y="0" width="5820" height="28"/>
+ </objectgroup>
+ <layer name="Test" width="182" height="33">
+  <data encoding="base64" compression="zlib">
+   eJztwYEAAAAAw6D5U9/gBFUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPAMXdgAAQ==
+  </data>
+ </layer>
+</map>

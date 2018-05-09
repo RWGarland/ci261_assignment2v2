@@ -1,0 +1,174 @@
+
+katana_assets.png
+size: 256,256
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+sprite_katana00
+  rotate: false
+  xy: 2, 36
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana01
+  rotate: false
+  xy: 2, 36
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana02
+  rotate: false
+  xy: 2, 36
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana03
+  rotate: false
+  xy: 2, 36
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana20
+  rotate: false
+  xy: 2, 36
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana21
+  rotate: false
+  xy: 2, 36
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana22
+  rotate: false
+  xy: 2, 36
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana23
+  rotate: false
+  xy: 2, 36
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana04
+  rotate: false
+  xy: 164, 198
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana05
+  rotate: false
+  xy: 164, 198
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana06
+  rotate: false
+  xy: 164, 198
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana07
+  rotate: false
+  xy: 164, 198
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana08
+  rotate: false
+  xy: 164, 198
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana15
+  rotate: false
+  xy: 164, 198
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana16
+  rotate: false
+  xy: 164, 198
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana17
+  rotate: false
+  xy: 164, 198
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana18
+  rotate: false
+  xy: 164, 198
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana19
+  rotate: false
+  xy: 164, 198
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana09
+  rotate: false
+  xy: 2, 2
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana10
+  rotate: false
+  xy: 2, 2
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana11
+  rotate: false
+  xy: 2, 2
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana12
+  rotate: false
+  xy: 2, 2
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana13
+  rotate: false
+  xy: 2, 2
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+sprite_katana14
+  rotate: false
+  xy: 2, 2
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
