@@ -4,7 +4,6 @@ import com.allsopg.game.physics.WorldManager;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.Body;
 import com.badlogic.gdx.physics.box2d.BodyDef;
@@ -27,7 +26,6 @@ public class BonusSprite extends AnimatedSprite {
     protected Animation.PlayMode playmode;
     private Body spriteBody;
     private TextureAtlas atlas;
-    private Rectangle collisionRectangle;
     private int score;
    // private SoundLink soundLink;
 
@@ -46,7 +44,7 @@ public class BonusSprite extends AnimatedSprite {
         bodyDef.position.set(getX(),getY());
     //sets the sprite body
         spriteBody = WorldManager.getInstance().getWorld().createBody(bodyDef);
-        spriteBody.setUserData(this);
+        spriteBody.setUserData("sprite");
         spriteBody.setFixedRotation(true);
         spriteBody.createFixture(getFixtureDef(DENSITY,FRICTION,RESTITUTION));
     }
@@ -68,6 +66,9 @@ public class BonusSprite extends AnimatedSprite {
         fixtureDef.restitution=restitution;
         return fixtureDef;
     }
+
+
+
 
     //in collision function add the soundLink.play();
     //This should work...

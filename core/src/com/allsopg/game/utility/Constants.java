@@ -33,7 +33,7 @@ public class Constants {
     public static final float RESTITUTION=.5f;
     //impulse strength
     public static final float FORCE_X=30f;
-    public static final float FORCE_Y=30f;
+    public static final float FORCE_Y=40f;
     //Speed
     public static final float MAX_VELOCITY = 1f;
     public static final float MAX_HEIGHT = 30;
@@ -56,7 +56,7 @@ public class Constants {
     public static final String KATANA_ATLAS_PATH = "gfx/Katana/katana_assets.atlas";
     public static final String UMBRELLA_ATLAS_PATH = "gfx/Umbrella/UmJump_assets.atlas";
     //Sprite body
-    public static float SPRITE_OFFSET_Y=1.5f;
+    public static float SPRITE_OFFSET_Y=2.15f;
     public static float SPRITE_OFFSET_X=1.5f;
     //Setting collision rectangle measurements
     public static final float COLLISION_RECT_WIDTH = 1;

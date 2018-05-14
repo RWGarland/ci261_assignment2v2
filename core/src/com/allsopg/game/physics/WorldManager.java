@@ -1,12 +1,14 @@
 package com.allsopg.game.physics;
 
 import com.allsopg.game.TBWGame;
+import com.allsopg.game.bodies.worldContactListener;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.maps.Map;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.Box2D;
 import com.badlogic.gdx.physics.box2d.Box2DDebugRenderer;
 import com.badlogic.gdx.physics.box2d.World;
+
 import static com.allsopg.game.utility.Constants.PHYSICS_MATERIALS_PATH;
 import static com.allsopg.game.utility.Constants.POSITION_ITERATIONS;
 import static com.allsopg.game.utility.Constants.TILE_SIZE;
@@ -45,6 +47,7 @@ public class WorldManager {
         mapBodyManager = new MapBodyManager(world, TILE_SIZE, Gdx.files.internal(PHYSICS_MATERIALS_PATH));
         mapBodyManager.createPhysics(map,"collisions");
         debugRenderer = new Box2DDebugRenderer();
+        world.setContactListener(new worldContactListener());
     }
 
     public static void initialise(TBWGame aGame, Map aMap){
@@ -68,5 +71,6 @@ public class WorldManager {
             debugRenderer.render(world, game.camera.combined);
         game.batch.end();
     }
+
 
 }

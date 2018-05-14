@@ -42,7 +42,7 @@ public class PlayerCharacter extends AnimatedSprite implements IWorldObject {
         bodyDef.position.set(getX(),getY());
 
         playerBody = WorldManager.getInstance().getWorld().createBody(bodyDef);
-        playerBody.setUserData(this);
+        playerBody.setUserData("player");
         playerBody.setFixedRotation(true);
         playerBody.createFixture(getFixtureDef(DENSITY,FRICTION,RESTITUTION));
 

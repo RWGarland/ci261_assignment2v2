@@ -72,4 +72,8 @@ public abstract class AnimatedSprite extends Sprite {
         }
     }
 
+    public void onPlayerHit(){
+        Gdx.app.log("play hit","sprite");
+    }
+
 }

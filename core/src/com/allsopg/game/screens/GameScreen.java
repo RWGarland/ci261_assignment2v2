@@ -15,6 +15,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+import com.badlogic.gdx.math.Rectangle;
 
 import static com.allsopg.game.utility.Constants.KATANA_ATLAS_PATH;
 import static com.allsopg.game.utility.Constants.KATANA_START;
@@ -41,6 +42,8 @@ public class GameScreen extends ScreenAdapter {
     private BonusSprite Katana;
     private HUD gameHUD;
     private CameraManager cameraManager;
+    private Rectangle playerRect;
+    private Rectangle spriteRect;
     private float frameDelta = 0;
     private float stateTime;
     Music gameMusic = Gdx.audio.newMusic(Gdx.files.internal("sounds/bitTuneFlux.wav"));
@@ -71,6 +74,7 @@ public class GameScreen extends ScreenAdapter {
         //bonusSprites
         Umbrella = new BonusSprite(UMBRELLA_ATLAS_PATH,MEDIUM,UMBRELLA_START);
         Katana = new BonusSprite(KATANA_ATLAS_PATH,MEDIUM,KATANA_START);
+
     }
 
     @Override
@@ -119,6 +123,8 @@ public class GameScreen extends ScreenAdapter {
     //plays the game music in the background
     private void playMusic(){
         gameMusic.play();
-        gameMusic.setVolume(0.5f);
+        gameMusic.setVolume(0.01f);
     }
+
+
 }
