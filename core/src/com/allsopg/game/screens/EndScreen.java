@@ -21,7 +21,7 @@ public class EndScreen extends ScreenAdapter {
     Table tableData;
     //Scene2D Widgets
     private Label countdownLabel, headerLabel, linkLabel;
-    private static Label scoreLabel;
+    private static Label armourLabel;
 
     public EndScreen(){
         stage = new Stage(new FitViewport(Constants.VIRTUAL_WIDTH/3, Constants.VIRTUAL_HEIGHT/3));
@@ -48,13 +48,13 @@ public class EndScreen extends ScreenAdapter {
     private void createScoreAndTimer(){
         //define labels using the String, and a Label style consisting of a font and color
         headerLabel = new Label("LEVEL ONE SCORE", new Label.LabelStyle(new BitmapFont(), Color.LIME));
-        scoreLabel = new Label(String.format("%03d", GameData.getInstance().getScore()), new Label.LabelStyle(new BitmapFont(), Color.YELLOW));
+        armourLabel = new Label(String.format("%03d", GameData.getInstance().getArmour()), new Label.LabelStyle(new BitmapFont(), Color.YELLOW));
         linkLabel = new Label("POINTS", new Label.LabelStyle(new BitmapFont(), Color.YELLOW));
         //add labels to table
         tableData.add(headerLabel).padLeft(150);
         tableData.row();
         tableData.add(linkLabel).padLeft(60);
-        tableData.add(scoreLabel).expandX().padRight(160);
+        tableData.add(armourLabel).expandX().padRight(160);
 
     }
 

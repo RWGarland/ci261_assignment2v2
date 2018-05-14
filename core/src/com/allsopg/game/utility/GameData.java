@@ -7,6 +7,7 @@ package com.allsopg.game.utility;
 public class GameData {
     private float time;
     private int score;
+    private int armour;
     private String playerName;
     private static GameData INSTANCE;
 
@@ -41,9 +42,14 @@ public class GameData {
         this.score = score;
     }
 
+    public int getArmour() { return armour; }
+
+    public void setArmour(int armour) { this.armour = armour; }
+
     public void resetGameData(){
         time=0;
         score=0;
+        armour=0;
         playerName="";
     }
 }

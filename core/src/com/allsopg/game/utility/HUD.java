@@ -37,11 +37,13 @@ public class HUD implements Disposable {
     private Integer worldTimer;
     private float timeCount;
     private static Integer score;
+    private static Integer armour;
+    private static Integer attack;
     private boolean timeUp;
 
     //Scene2D Widgets
-    private Label countdownLabel, timeLabel, linkLabel;
-    private static Label scoreLabel;
+    private Label countdownLabel, timeLabel, linkLabel, armourLinkLabel, attackLinkLabel;
+    private static Label scoreLabel, armourLabel, attackLabel;
 
     public HUD(SpriteBatch sb, PlayerCharacter playerCharacter, TBWGame tbwGame) {
         this.playerCharacter = playerCharacter;
@@ -50,6 +52,8 @@ public class HUD implements Disposable {
         worldTimer = Constants.LEVEL_TIME;
         timeCount = 0;
         score = 0;
+        armour = 0;
+        attack = 0;
         //new camera used to setup the HUD viewport seperate from the main Game Camera
         //define stage using that viewport and games spritebatch
         viewport = new FitViewport(Constants.VIRTUAL_WIDTH,
@@ -74,15 +78,28 @@ public class HUD implements Disposable {
                 new Label.LabelStyle(new BitmapFont(), Color.RED));
         scoreLabel = new Label(String.format("%03d", score),
                 new Label.LabelStyle(new BitmapFont(), Color.BLUE));
-        timeLabel = new Label("COUNTDOWN",
+        armourLabel = new Label(String.format("%03d", armour),
+                new Label.LabelStyle(new BitmapFont(), Color.GREEN));
+        attackLabel = new Label(String.format("%03d", attack),
+                new Label.LabelStyle(new BitmapFont(), Color.YELLOW));
+        timeLabel = new Label("COUNTDOWN:",
                 new Label.LabelStyle(new BitmapFont(), Color.RED));
-        linkLabel = new Label("POINTS",
+        linkLabel = new Label("POINTS: ",
                 new Label.LabelStyle(new BitmapFont(), Color.BLUE));
+        armourLinkLabel = new Label("ARMOUR: ",
+                new Label.LabelStyle(new BitmapFont(), Color.GREEN));
+        attackLinkLabel = new Label("ATTACK: ",
+                new Label.LabelStyle(new BitmapFont(), Color.YELLOW));
         //labels added to table using padding and expandX
         tableData.add(linkLabel).padBottom(5).padLeft(120);
         tableData.add(scoreLabel).expandX().padBottom(5);
+        tableData.add(armourLinkLabel).padBottom(5).padLeft(100);
+        tableData.add(armourLabel).expandX().padBottom(5);
+        tableData.add(attackLinkLabel).padBottom(5).padLeft(80);
+        tableData.add(attackLabel).expandX().padBottom(5);
         tableData.add(timeLabel).padBottom(5).padRight(20);
         tableData.add(countdownLabel).expandX().padBottom(5);
+
     }
 
     private void createNavButtons(){
@@ -162,6 +179,16 @@ public class HUD implements Disposable {
         scoreLabel.setText(String.format("%06d", score));
     }
 
+    public static void addArmour(int value) {
+        armour += value;
+        armourLabel.setText(String.format("%06d", armour));
+    }
+
+    public static void addAttack(int value) {
+        attack += value;
+        attackLabel.setText(String.format("%06d", attack));
+    }
+
     @Override
     public void dispose() {
         stage.dispose();
@@ -180,5 +207,19 @@ public class HUD implements Disposable {
         return score;
     }
 
+    public static Label getArmourLabel(){
+        return armourLabel;
+    }
 
+    public static Integer getArmour(){
+        return armour;
+    }
+
+    public static Label getAttackLabel(){
+        return attackLabel;
+    }
+
+    public static Integer getAttack(){
+        return attack;
+    }
 }

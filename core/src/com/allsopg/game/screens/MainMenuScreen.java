@@ -38,7 +38,7 @@ public class MainMenuScreen extends ScreenAdapter {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         game.camera.update();
         game.batch.begin();
-        game.batch.draw(TitleScreen, 0, 50, VIRTUAL_WIDTH, VIRTUAL_HEIGHT);
+        game.batch.draw(TitleScreen, 0, 0, VIRTUAL_WIDTH, VIRTUAL_HEIGHT);
         game.font.draw(game.batch, "Assignment 2 By Edward and Rupert", 10, 70);
        // game.font.draw(game.batch, "Touch screen to start", 100, 100);
         game.batch.end();

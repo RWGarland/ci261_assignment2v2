@@ -61,7 +61,8 @@ public abstract class AnimatedSprite extends Sprite {
         Array<TextureAtlas.AtlasRegion> regions = new
                 Array<TextureAtlas.AtlasRegion>(atlas.getRegions());
         regions.sort(new RegionComparator());
-        animation = new Animation(FRAME_DURATION,regions, Animation.PlayMode.NORMAL);
+        //changed to a loop to keep animations animating
+        animation = new Animation(FRAME_DURATION,regions, Animation.PlayMode.LOOP);
     }
 
     private static class RegionComparator implements Comparator<TextureAtlas.AtlasRegion> {

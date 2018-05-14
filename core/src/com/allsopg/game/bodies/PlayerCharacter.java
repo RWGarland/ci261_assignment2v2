@@ -45,6 +45,7 @@ public class PlayerCharacter extends AnimatedSprite implements IWorldObject {
         playerBody.setUserData(this);
         playerBody.setFixedRotation(true);
         playerBody.createFixture(getFixtureDef(DENSITY,FRICTION,RESTITUTION));
+
     }
 
     @Override
@@ -102,4 +103,5 @@ public class PlayerCharacter extends AnimatedSprite implements IWorldObject {
     public void reaction() {
 
     }
+
 }
