@@ -91,6 +91,7 @@ public class GameScreen extends ScreenAdapter {
     }
 
 
+
     private void draw() {
        orthogonalTiledMapRenderer.setView(game.camera);
        orthogonalTiledMapRenderer.render();
