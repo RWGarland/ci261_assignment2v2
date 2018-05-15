@@ -8,6 +8,7 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.physics.box2d.Fixture;
 import com.badlogic.gdx.utils.Array;
 
 import java.util.Comparator;
@@ -26,8 +27,9 @@ import static com.allsopg.game.utility.Constants.PLAYER_WIDTH;
 public abstract class AnimatedSprite extends Sprite {
     protected Animation animation;
     protected Animation.PlayMode playmode;
+    protected Fixture fixture;
     private TextureAtlas atlas;
-
+    //to put in the collision rectangle
     private Rectangle collisionRectangle;
 
     public AnimatedSprite(String atlasString, Texture t, Vector2 pos){

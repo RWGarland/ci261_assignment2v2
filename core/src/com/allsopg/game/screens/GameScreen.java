@@ -46,9 +46,10 @@ public class GameScreen extends ScreenAdapter {
     private Rectangle spriteRect;
     private float frameDelta = 0;
     private float stateTime;
-    Music gameMusic = Gdx.audio.newMusic(Gdx.files.internal("sounds/bitTuneFlux.wav"));
+    Music gameMusic = Gdx.audio.newMusic(Gdx.files.internal("sounds/gameMusic.wav"));
 
     public GameScreen(TBWGame tbwGame){this.game = tbwGame;
+        //sets up the play music
         playMusic();
     }
 
@@ -108,7 +109,7 @@ public class GameScreen extends ScreenAdapter {
         Katana.draw(game.batch);
         game.batch.end();
         gameHUD.stage.draw();
-        WorldManager.getInstance().debugRender();
+       // WorldManager.getInstance().debugRender();
     }
     @Override
     public void dispose(){
@@ -123,7 +124,8 @@ public class GameScreen extends ScreenAdapter {
     //plays the game music in the background
     private void playMusic(){
         gameMusic.play();
-        gameMusic.setVolume(0.01f);
+        gameMusic.setLooping(true);
+        gameMusic.setVolume(0.6f);
     }
 
 

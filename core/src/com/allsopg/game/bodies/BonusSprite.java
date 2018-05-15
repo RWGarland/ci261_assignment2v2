@@ -67,9 +67,4 @@ public class BonusSprite extends AnimatedSprite {
         return fixtureDef;
     }
 
-
-
-
-    //in collision function add the soundLink.play();
-    //This should work...
 }

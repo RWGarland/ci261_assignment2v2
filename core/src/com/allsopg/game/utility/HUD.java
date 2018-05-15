@@ -128,7 +128,7 @@ public class HUD implements Disposable {
         //add buttons
         tableControls.add(upBtn).padLeft(50);
         tableControls.add(downBtn).expandX(); // even though this line of code is not necessary anymore as we have removed the down button, we have kept this line in to help with the location of the other buttons on screen.
-        tableControls.add(leftBtn).expandX().padLeft(150);
+        tableControls.add(leftBtn).expandX().padLeft(300);
         tableControls.add(rightBtn).expandX().padRight(25);
         //add listeners to the buttons
         addButtonListeners();

@@ -45,6 +45,7 @@ public class WorldManager {
         Box2D.init();
         world = new World(gravity, true);
         mapBodyManager = new MapBodyManager(world, TILE_SIZE, Gdx.files.internal(PHYSICS_MATERIALS_PATH));
+        //changed it to collisions so it will work with the tiled map we had created
         mapBodyManager.createPhysics(map,"collisions");
         debugRenderer = new Box2DDebugRenderer();
         world.setContactListener(new worldContactListener());
@@ -65,12 +66,14 @@ public class WorldManager {
     public void doPhysicsStep(float deltaTime) {
         world.step(TIME_STEP, VELOCITY_ITERATIONS, POSITION_ITERATIONS);
     }
-
-    public void debugRender(){
-        game.batch.begin();
-            debugRenderer.render(world, game.camera.combined);
-        game.batch.end();
-    }
+/**
+ * allows the bounding boxes to have an outline to help with debuggng when testing collisions
+ */
+//    public void debugRender(){
+//        game.batch.begin();
+//            debugRenderer.render(world, game.camera.combined);
+//        game.batch.end();
+//    }
 
 
 }

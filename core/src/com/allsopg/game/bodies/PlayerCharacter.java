@@ -29,7 +29,6 @@ import static com.allsopg.game.utility.Constants.RESTITUTION;
 public class PlayerCharacter extends AnimatedSprite implements IWorldObject {
     private Body playerBody;
     private boolean facingRight =true;
-
     public PlayerCharacter(String atlas, Texture t, Vector2 pos) {
         super(atlas, t, pos);
         buildBody();

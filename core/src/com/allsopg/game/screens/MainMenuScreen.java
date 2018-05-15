@@ -3,6 +3,7 @@ package com.allsopg.game.screens;
 import com.allsopg.game.TBWGame;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.ScreenAdapter;
+import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.maps.tiled.TiledMap;
@@ -19,12 +20,18 @@ import static com.allsopg.game.utility.Constants.VIRTUAL_WIDTH;
 public class MainMenuScreen extends ScreenAdapter {
         private TBWGame game;
         private Texture TitleScreen;
+        Music menuMusic = Gdx.audio.newMusic(Gdx.files.internal("sounds/menuMusic.wav"));
 
         public MainMenuScreen(TBWGame aGame) {
 
             this.game = aGame;
+            playMusic();
             TitleScreen = new Texture(Gdx.files.internal("Menu/Menu.png"));
+
         }
+
+
+
 
     @Override
     public void show() {
@@ -46,7 +53,17 @@ public class MainMenuScreen extends ScreenAdapter {
         if (Gdx.input.isTouched()) {
             game.setScreen(new GameScreen(game));
             dispose();
+            stopMusic();
         }
+
+    }
+    private void playMusic(){
+        menuMusic.play();
+        menuMusic.setLooping(true);
+        menuMusic.setVolume(0.8f);
+    }
+    private void stopMusic(){
+        menuMusic.stop();
     }
 
     @Override
